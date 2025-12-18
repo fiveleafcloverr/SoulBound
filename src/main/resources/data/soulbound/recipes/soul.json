@@ -1,0 +1,18 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "soulbound:soul_shard"
+    }
+  },
+  "result": {
+    "item": "soulbound:soul"
+  }
+}

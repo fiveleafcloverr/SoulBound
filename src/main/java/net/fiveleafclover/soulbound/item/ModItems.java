@@ -17,7 +17,9 @@ public class ModItems {
     public static final Item BLAZESTEEL_KHOPESH = registerItem("blazesteel_khopesh", new BlazesteelKhopeshItem(
             ModToolMaterial.SOUL, 8, -2f, new FabricItemSettings()));
 
-    public static final Item SOUL = registerItem("soul", new Item(new FabricItemSettings().rarity(Rarity.RARE)));
+    public static final Item SOUL = registerItem("soul", new Item(new FabricItemSettings().rarity(Rarity.RARE).maxCount(1)));
+    public static final Item SOUL_SHARD = registerItem("soul_shard", new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+    public static final Item SOUL_FRAGMENT = registerItem("soul_fragment", new Item(new FabricItemSettings()));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {

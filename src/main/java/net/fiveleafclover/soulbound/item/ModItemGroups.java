@@ -18,6 +18,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.BLAZESTEEL_KHOPESH);
                         entries.add(ModItems.SOUL);
+                        entries.add(ModItems.SOUL_SHARD);
+                        entries.add(ModItems.SOUL_FRAGMENT);
 
                         entries.add(ModBlocks.SOUL_FORGE);
 
