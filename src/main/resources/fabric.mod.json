@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "soulbound",
+	"version": "${version}",
+	"name": "SoulBound",
+	"description": "im probably gonna forget to update this later",
+	"authors": [
+		"fiveleafclover"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/soulbound/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.fiveleafclover.soulbound.SoulBound"
+		],
+		"client": [
+			"net.fiveleafclover.soulbound.SoulBoundClient"
+		],
+		"fabric-datagen": [
+			"net.fiveleafclover.soulbound.SoulBoundDataGenerator"
+		],
+		"rei_client": [
+			"net.fiveleafclover.soulbound.compat.SoulBoundREIClientPlugin"
+		]
+	},
+	"mixins": [
+		"soulbound.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,20 @@
+
+{
+  "variants": {
+    "facing=north": {
+      "model": "soulbound:block/soul_forge"
+    },
+    "facing=east": {
+      "model": "soulbound:block/soul_forge",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "soulbound:block/soul_forge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "soulbound:block/soul_forge",
+      "y": 270
+    }
+  }
+}

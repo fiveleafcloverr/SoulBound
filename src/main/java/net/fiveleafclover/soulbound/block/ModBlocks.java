@@ -1,0 +1,36 @@
+package net.fiveleafclover.soulbound.block;
+
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fiveleafclover.soulbound.SoulBound;
+import net.fiveleafclover.soulbound.block.custom.SoulForgeBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+
+public class ModBlocks {
+
+    public static final Block SOUL_FORGE = registerBlock("soul_forge",
+            new SoulForgeBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque().luminance(state ->
+                state.get(SoulForgeBlock.HAMMERING) ? 15 : state.get(SoulForgeBlock.HEATING) ? 9 : 3
+            )));
+
+
+    private static Block registerBlock(String name, Block block) {
+        registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, new Identifier(SoulBound.MOD_ID, name), block);
+    }
+
+    private static Item registerBlockItem(String name, Block block) {
+        return Registry.register(Registries.ITEM, new Identifier(SoulBound.MOD_ID, name),
+                new BlockItem(block, new FabricItemSettings()));
+    }
+
+    public static void registerModBlocks() {
+        SoulBound.LOGGER.info(SoulBound.MOD_ID + " is registering blocks :3");
+    }
+}

@@ -1,0 +1,20 @@
+
+{
+  "type": "soulbound:soul_forging",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:blaze_rod"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  ],
+  "heat_time": 300,
+  "hammer_hits": 10,
+  "output": {
+    "item": "soulbound:blazesteel_khopesh"
+  }
+}

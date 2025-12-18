@@ -1,0 +1,13 @@
+
+{
+  "item.soulbound.blazesteel_khopesh": "Blazesteel Khopesh",
+  "item.soulbound.soul": "Soul",
+
+  "block.soulbound.soul_forge": "Soul Forge",
+
+  "itemgroup.soulbound": "SoulBound",
+
+  "tooltip.soulbound.blazesteel_khopesh": "Bound to: ",
+
+  "rei.soulbound.soul_forge": "Soul Forging"
+}
